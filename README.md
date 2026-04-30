@@ -47,6 +47,7 @@ A premium, persona-based AI chatbot featuring the leadership of Scaler: **Anshum
 ## 📄 Documentation
 - [System Prompts & Annotations](prompts.md)
 - [Project Reflection](reflection.md)
+- [Deployment Guide](deploy.md)
 
 ## 👤 Author
 - **Piyush Kumar**

@@ -14,11 +14,20 @@ export const sendMessage = async (persona, message, history) => {
       systemInstruction: persona.systemPrompt
     });
 
-    const chat = model.startChat({
-      history: history.map(msg => ({
+    // Gemini requires the history to start with a 'user' message.
+    // Our first message is often a 'bot' greeting, which we should skip for the API history.
+    const apiHistory = history
+      .map(msg => ({
         role: msg.role === "user" ? "user" : "model",
         parts: [{ text: msg.text }],
-      })),
+      }))
+      .filter((msg, index, arr) => {
+        if (index === 0 && msg.role === "model") return false;
+        return true;
+      });
+
+    const chat = model.startChat({
+      history: apiHistory,
     });
 
     const result = await chat.sendMessage(message);

@@ -3,7 +3,7 @@
 A premium, persona-based AI chatbot featuring the leadership of Scaler: **Anshuman Singh**, **Abhimanyu Saxena**, and **Kshitij Mishra**. Built as part of the Prompt Engineering assignment at Scaler Academy.
 
 ## 🚀 Live Demo
-**[Live Application (Vercel)](https://gen-ai-assignment-q808of965-pyush269s-projects.vercel.app/)**
+**[Live Application (Vercel)](https://gen-ai-assignment-delta.vercel.app/)**
 
 ## ✨ Features
 - **Authentic Personas**: Meticulously researched system prompts for three Scaler leaders.
